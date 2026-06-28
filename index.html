@@ -1,65 +1,215 @@
 <!DOCTYPE html>
 <html lang="fr">
   <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mon Profil — Jude Koy</title>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Jude Koy — deeks</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Bangers&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="style.css" />
   </head>
+
   <body>
 
+    <nav>
+      <div class="nav-logo">deeks.</div>
+      <ul>
+        <li><a href="#apropos">À propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+    </nav>
+
     <header>
-      <h1>Jude Koy (deeks)</h1>
-      <p>Étudiant Développeur Full Stack</p>
+      <div class="hero-content">
+        <h1 class="hero-titre">
+          On a toujours besoin<br />
+          d'un <span>Jude Koy</span>
+        </h1>
+        <p class="hero-sous-titre">
+          Développeur web basé à Brazzaville, République du Congo.
+          Je construis des expériences web modernes, propres et accessibles.
+          Disponible pour collaborer, créer et livrer.
+        </p>
+        <div class="hero-btns">
+          <a href="#services" class="btn-primary">Voir mes offres</a>
+          <a href="#contact" class="btn-outline">Me contacter</a>
+        </div>
+      </div>
+
     </header>
 
-    <main>
+    <section id="apropos" class="section-wrapper">
+      <div class="section-inner apropos-inner">
 
-      <section id="apropos">
-        <h2>À propos de moi</h2>
-        <p>
-          Je m'appelle Jude Koy (deeks) mon pseudo, je suis basé à Brazzaville, 
-          et je suis actuellement en formation Full Stack Developer 
-          à l'Akieni Academy. Passionné par le web, la technologie et l'IA
-          je me construis chaque jour en apprenant de nouvelles compétences, 
-          et en créant des projets.
+        <div class="apropos-texte">
+          <p class="section-label">Qui suis-je ?</p>
+          <h2 class="section-titre">Brazzaville a produit<br />quelque chose de bien.</h2>
+          <div class="separator"></div>
+          <p>
+            Je suis <strong>Jude Koy</strong>, alias
+            <strong class="accent">deeks</strong> — développeur
+            web en formation à l'Akieni Academy, Brazzaville, RP Congo.
+          </p>
+          <p>
+            Je maîtrise la structure HTML5 sémantique et le CSS moderne.
+            Je crois que chaque ligne de code doit avoir du sens, que chaque
+            page doit être belle, accessible et lisible. Je code avec intention.
+          </p>
+        </div>
+
+        <div class="apropos-stats">
+          <div class="stat-card">
+            <div class="stat-nombre">2</div>
+            <div class="stat-label">Semaines de formation</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-nombre">100%</div>
+            <div class="stat-label">Code W3C valide</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-nombre">∞</div>
+            <div class="stat-label">Motivation</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-nombre">1</div>
+            <div class="stat-label">Deeks disponible</div>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="services" class="section-wrapper">
+      <div class="section-inner">
+
+        <p class="section-label">Mes offres</p>
+        <h2 class="section-titre">Choisissez votre Jude Koy</h2>
+        <p class="section-desc">
+          Trois formules, une seule personne. Sélectionnez l'expérience
+          qui correspond à ce que vous cherchez.
         </p>
-      </section>
 
-      <section id="competences">
-        <h2>Mes Compétences</h2>
-        <ul>
-          <li>HTML — Structure et sémantique</li>
-          <li>CSS — Mise en forme et mise en page</li>
-          <li>Git — Versioning et GitHub</li>
-        </ul>
-      </section>
+        <div class="cards-grid">
 
-      <section id="formation">
-        <h2>Ma Formation</h2>
-        <table>
-          <tbody>
-            <tr>
-              <td>Full Stack Developer</td>
-              <td>Akieni Academy</td>
-              <td>2026 - en cours</td>
-            </tr>
-          </tbody>
-        </table>
-      </section>
+          <article class="card card-1">
+            <span class="card-badge badge-1">Édition limitée</span>
+            <h3>Le Petit Ami Idéal</h3>
+            <p>
+              Attentionné, fiable et toujours là quand tu en as besoin.
+              Je lis les signaux non-verbaux et je peux écouter pendant
+              des heures sans regarder mon téléphone.
+            </p>
+            <ul class="card-liste">
+              <li>Présent dans les moments difficiles</li>
+              <li>Jamais en retard aux rendez-vous</li>
+              <li>Je retiens tous les détails importants</li>
+              <li>Compatible avec tous les caractères</li>
+            </ul>
+            <p class="card-prix prix-1">Disponibilité : rare</p>
+            <a href="#contact" class="card-btn cbtn-1">Je veux ce Jude</a>
+          </article>
 
-      <section id="contact">
-        <h2>Me Contacter</h2>
-        <ul>
-          <li>Email : <a href="mailto:deekskoy@gmail.com">deekskoy@gmail.com</a></li>
-          <li>GitHub : <a href="https://github.com/Deekskn">github.com/Deekskn</a></li>
-          <li>Ville : Brazzaville, Congo</li>
-        </ul>
-      </section>
+          <article class="card card-2">
+            <span class="card-badge badge-2">Best seller</span>
+            <h3>L'Ami Indispensable</h3>
+            <p>
+              Le genre d'ami qu'on appelle à 2h du matin et qui répond.
+              Loyal, honnête, drôle et capable de garder un secret.
+              Certifié « meilleur ami de l'année ».
+            </p>
+            <ul class="card-liste">
+              <li>Toujours de bons conseils</li>
+              <li>Honnête même quand ça fait mal</li>
+              <li>Vibe compatible garantie</li>
+              <li>Disponible en toutes circonstances</li>
+            </ul>
+            <p class="card-prix prix-2">Disponibilité : ouverte</p>
+            <a href="#contact" class="card-btn cbtn-2">Je veux cet ami</a>
+          </article>
 
-    </main>
+          <article class="card card-3">
+            <span class="card-badge badge-3">Pro</span>
+            <h3>Propose-moi quelque chose</h3>
+            <p>
+              Tu as un projet web ? Une idée ? Un défi à relever ?
+              Je suis ouvert aux collaborations, missions freelance,
+              stages et opportunités de toute nature.
+            </p>
+            <ul class="card-liste">
+              <li>Pages web HTML5 et CSS3</li>
+              <li>Intégration de maquettes</li>
+              <li>Structures sémantiques propres</li>
+              <li>Livraison rapide et code commenté</li>
+            </ul>
+            <p class="card-prix prix-3">Tarif : à discuter</p>
+            <a href="#contact" class="card-btn cbtn-3">Faire une offre</a>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <section id="contact" class="section-wrapper">
+      <div class="section-inner contact-inner">
+
+        <div class="contact-info">
+          <p class="section-label">Parlons-nous</p>
+          <h2>Prêt à travailler avec le meilleur Jude du Congo ?</h2>
+          <div class="separator"></div>
+          <p>
+            Que ce soit pour un projet web, une collaboration ou juste
+            pour dire bonjour — je réponds toujours. Remplis le formulaire
+            et je te reviens dans les 24h.
+          </p>
+          <div class="contact-detail">
+            <span>Brazzaville, République du Congo</span>
+          </div>
+          <div class="contact-detail">
+            <span>Akieni Academy — Formation Full Stack</span>
+          </div>
+          <div class="contact-detail">
+            <span>Disponible pour missions et collaborations</span>
+          </div>
+        </div>
+
+        <form>
+          <div class="form-row">
+            <div class="form-groupe">
+              <label for="prenom">Prénom</label>
+              <input type="text" id="prenom" name="prenom" placeholder="Ton prénom" />
+            </div>
+            <div class="form-groupe">
+              <label for="nom">Nom</label>
+              <input type="text" id="nom" name="nom" placeholder="Ton nom" />
+            </div>
+          </div>
+
+          <div class="form-groupe">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="ton@email.com" />
+          </div>
+
+          <div class="form-groupe">
+            <label for="message">Ton message</label>
+            <textarea id="message" name="message" placeholder="Dis-moi tout..."></textarea>
+          </div>
+
+          <button type="submit" class="form-submit">
+            Envoyer le message
+          </button>
+        </form>
+
+      </div>
+    </section>
 
     <footer>
-      <p>© 2026 Jude Koy (deeks) — Tous droits réservés</p>
+      <p>
+        Conçu avec coeur par <span>Jude Koy</span> alias
+        <span>deeks</span> —
+        Brazzaville, RP Congo &copy; 2026
+      </p>
     </footer>
 
   </body>
